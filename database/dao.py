@@ -10,7 +10,7 @@ class DAO:
         result = []
         cursor = conn.cursor(dictionary=True)
         query = """
-                SELECT *
+                SELECT COUNT(*)
                 FROM artist a
                 """
         cursor.execute(query)
